@@ -1,7 +1,8 @@
 package repos
 
 import (
-	"github.com/harrydimas/go-learn/models"
+	"go-learn/models"
+
 	"github.com/jinzhu/gorm"
 )
 
