@@ -8,11 +8,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
+	_ "github.com/lib/pq"
 )
 
 func main() {
 	r := gin.Default()
-	db, err := gorm.Open("postgres", "dbname=nama_database user=nama_pengguna password=password sslmode=disable")
+	db, err := gorm.Open("postgres", "dbname=go_learn user=postgres password=qwerty sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
